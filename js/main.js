@@ -1,17 +1,20 @@
 let turno = 0;
-const tablero = ["", "", "", "", "", "", "", ""];
+const tablero = ["", "", "", "", "", "", "", "", ""];
 
 const btnPulsado = (event, pos) => {
     turno++;
     const btn = event.target
     const color = turno % 2 ? 'orange' : 'green'
+    
     btn.style.backgroundColor = color;
     tablero[pos] = color;
+    {once:true }
     if (haGanado()) {
         window.location = "../pages/ganador.html"
-    }
+    } 
+   
 }
-
+ document.querySelectorAll('button').forEach((obj, i) => obj.addEventListener('click', (e) => btnPulsado(e, i)));
 
 const haGanado = () => {
     if (tablero[0] == tablero[1] && tablero[0] == tablero[2] && tablero[0]) {
@@ -34,7 +37,7 @@ const haGanado = () => {
     return false;
 }
 
-document.querySelectorAll('button').forEach((obj, i) => obj.addEventListener('click', (e) => btnPulsado(e, i)));
+
 
 const login = () => {
     let user1 = document.getElementById("user1").value;

@@ -1,10 +1,7 @@
 #feli {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-
+    padding: 200px;
 }
 
 #but {
-    padding: 30px;
+    padding: 200px;
 }
