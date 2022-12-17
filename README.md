@@ -20,6 +20,6 @@ El tres en raya consta de:
 En este proyecto se han implementado las siguiente tecnologias:
 
 - HTML5
-- CSS
+- CSS3
 - Bootstrap
 - JavaScript
