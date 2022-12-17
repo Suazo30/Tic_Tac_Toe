@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/select_jugador.css">
+    <title>selec_jugador</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="but" class="row">
+            <div class="col">
+                <a href="/Tres_en_raya/index.html">
+                    <button type="button" class="btn btn-outline-warning">
+                        <h5>Atras</h5>
+                    </button>
+                </a>
+            </div>
+
+            <div class="row">
+                <div id="modo" class="col d-flex justify-content-center">
+                    <h1>Seleccion de Jugador</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="jugadores" class="d-flex justify-content-center">
+                    <form action="#" name="formlogin" id="formlogin">
+                        <div>
+                            <label for="user1">
+                                <h1>Jugador 1</h1>
+                            </label>
+                            <input type="text" name="user1" id="user1">
+                        </div>
+
+                        <div>
+                            <label for="user2">
+                                <h1>Jugador 2</h1>
+                            </label>
+                            <input type="text" name="user2" id="user2">
+                        </div>
+
+                        <div>
+                            <input class="btn btn-success" type="button" value="Entrar" id="send" onclick="login()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/main.js"></script>
+</body>
+</html>

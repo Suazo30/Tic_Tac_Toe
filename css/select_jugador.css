@@ -1,0 +1,27 @@
+body {
+    background-image: url(../css/img/jugadores.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+#modo {
+    padding: 100px;
+}
+
+
+#jugadores {
+    align-items: center;
+    padding: 10px;
+}
+
+
+#entrar {
+    padding: 80px;
+}
+
+#but {
+    padding: 20px;
+}

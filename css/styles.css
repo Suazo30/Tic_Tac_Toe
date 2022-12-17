@@ -1,0 +1,16 @@
+body {
+    background-image: url(./img/home.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+
+#titulo {
+     color:black;
+     text-decoration: none;
+     padding: 200px;
+}
+

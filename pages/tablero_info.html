@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/tablero.css">
+    <script src="../js/jugadore.js"></script>
+    <title>Tablero_info</title>
+</head>
+
+<body>
+
+
+    <header class="titulo">
+        Tic Tac Toe
+    </header>
+
+
+    <div class="container-fluid">
+        <div id="but" class="row">
+            <div class="col">
+                <a href="/Tres_en_raya/pages/selec_jugador.html">
+                    <button type="button" class="btn btn-outline-warning">
+                        <h5>Atras</h5>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div id="tablero">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-2">
+                    <h1>Jugador 1
+                        <script>mostrarUser1()</script>
+                    </h1>
+                </div>
+
+                <div class="col-2">
+                    <h1>Jugador 2
+                        <script>mostrarUser2()</script>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col text-center">
+                    <a href="/Tres_en_raya/pages/tablero_info.html">
+                        <button class="btn btn-danger">Volver a jugar</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.button {
+    height: 200px;
+    width: 200px;
+}
+
+#tablero {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+
+}
+
+.titulo {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#but {
+    padding: 20px;
+}
