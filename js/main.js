@@ -1,4 +1,4 @@
-let turn = "X"
+let turno = "X"
 let button = ["", "", "", "", "", "", "", "",]
 
 const selButton = (id) => {
