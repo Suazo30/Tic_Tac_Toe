@@ -1,18 +1,22 @@
-let turno = 0;
-const tablero = ["", "", "", "", "", "", "", "", ""];
+let turn = "X"
+let button = ["", "", "", "", "", "", "", "",]
 
-const btnPulsado = (event, pos) => {
-    turno++;
-    const btn = event.target
-    const color = turno % 2 ? 'orange' : 'green'
-    btn.style.backgroundColor = color;
-    tablero[pos] = color;
-    if (haGanado()) {
-        window.location = "../pages/ganador.html"
+const selButton = (id) => {
+    let button = document.querySelector(`#${id}`) 
+
+    if (button.value == undefined) { 
+        button.innerHTML = turno
+        let ind = parseInt(id.charAt(3))
+        button[ind] = turno
+    }
+
+    if (turno == "X") {
+        turno = "O"
+    } else {
+        turno = "X"
     }
 }
 
-document.querySelectorAll('button').forEach((obj, i) => obj.addEventListener('click', (e) => btnPulsado(e, i)));
 
 const haGanado = () => {
     if (tablero[0] == tablero[1] && tablero[0] == tablero[2] && tablero[0]) {

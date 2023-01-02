@@ -34,37 +34,37 @@
 
         <div class="row">
             <div id="tablero">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <div id="but0" class="button" onclick="selButton('but0')"></div>
+                <div id="but1" class="button" onclick="selButton('but1')"></div>
+                <div id="but2" class="button" onclick="selButton('but2')"></div>
+                <div id="but3" class="button" onclick="selButton('but3')"></div>
+                <div id="but4" class="button" onclick="selButton('but4')"></div>
+                <div id="but5" class="button" onclick="selButton('but5')"></div>
+                <div id="but6" class="button" onclick="selButton('but6')"></div>
+                <div id="but7" class="button" onclick="selButton('but7')"></div>
+                <div id="but8" class="button" onclick="selButton('but8')"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-2">
+                <h1>Jugador 1
+                    <script>mostrarUser1()</script>
+                </h1>
             </div>
 
-            <div class="row justify-content-around">
-                <div class="col-2">
-                    <h1>Jugador 1
-                        <script>mostrarUser1()</script>
-                    </h1>
-                </div>
-
-                <div class="col-2">
-                    <h1>Jugador 2
-                        <script>mostrarUser2()</script>
-                    </h1>
-                </div>
+            <div class="col-2">
+                <h1>Jugador 2
+                    <script>mostrarUser2()</script>
+                </h1>
             </div>
+        </div>
 
-            <div class="row mt-2">
-                <div class="col text-center">
-                    <a href="/Tres_en_raya/pages/tablero_info.html">
-                        <button class="btn btn-danger">Volver a jugar</button>
-                    </a>
-                </div>
+        <div class="row mt-2">
+            <div class="col text-center">
+                <a href="/Tres_en_raya/pages/tablero_info.html">
+                    <button class="btn btn-danger">Volver a jugar</button>
+                </a>
             </div>
         </div>
     </div>
